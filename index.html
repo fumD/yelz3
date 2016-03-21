@@ -1,0 +1,162 @@
+<!doctype html>
+<html>
+<head>
+    <title>Yelz! | Find what you want around you</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="themes/sample_themes.css">
+    <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+    <link rel="stylesheet" href="styles/app.css">
+    <link rel="stylesheet" href="styles/map.css">
+    <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+    <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+</head>
+<body>
+    <div data-role="page" id="home">
+ <div data-role="popup" id="popUp" data-theme="b">
+     <h3>Change Themes</h3>
+  <p><a href="#">Theme B</a></p>
+     <p><a href="#">Theme E</a></p>
+     <p><a href="#">Theme(Default)</a></p>
+</div>
+        <div data-role="header" data-theme="b">
+    <a href="#" class="ui-nodisc-icon ui-shadow ui-corner-all ui-btn  ui-btn-left ui-icon-audio ui-btn-icon-notext">Audio</a>        
+  <h1>Yelz!</h1>
+  <a href="#popUp" data-rel="popup" class="ui-nodisc-icon ui-shadow ui-corner-all ui-btn  ui-btn-right ui-icon-gear ui-btn-icon-notext">Settings</a>
+        </div><!-- /header -->
+ 
+        <div data-role="main" class="ui-content" >
+            <h1>Choose A Location</h1>
+            <ul data-role="listview" data-inset="true" data-theme="b">
+      <li>
+        <a href="#lagos">
+        <img src="images/lag.jpg" class="pix">
+        <h2>Lagos</h2>
+        <p>Lagos is in the South West of Nigeria</p>
+        </a>
+      </li>
+      <li>
+        <a href="#port" data-transition="slideup">
+        <img src="images/ph2.jpg" class="pix">
+        <h2>Port-Harcourt</h2>
+        <p>Garden-city state, in the South East of Nigeria.</p>
+        </a>
+      </li>
+    <li>
+        <a href="#abj">
+        <img src="images/ph.jpg" class="pix">
+        <h2>Abuja</h2>
+        <p>Federal Capital Territory - Seat of power</p>
+        </a>
+      </li>
+    <li>
+        <a href="#soko">
+        <img src="images/lag2.jpg" class="pix">
+        <h2>Sokoto</h2>
+        <p>Seat of Sultanate, North-East of Nigeria</p>
+        </a>
+      </li>            
+    </ul>
+        </div><!-- /content -->
+ 
+        <div data-role="footer" style="text-align: center" data-theme="b">
+    <p>Powered by iLaid Media | Policy</p>
+  
+</div><!-- /footer -->
+ 
+    </div><!-- /page -->
+    
+    <div data-role="page" id="lagos" >
+
+  <div data-role="header" data-theme="b">
+      <a href="#home" class="ui-nodisc-icon ui-btn ui-shadow ui-corner-all ui-btn-left ui-icon-arrow-l ui-btn-icon-notext">Back</a>
+    <h1>Yelz!</h1>
+      <a href="#" class="ui-nodisc-icon ui-shadow ui-corner-all ui-btn  ui-btn-right ui-icon-eye ui-btn-icon-notext">Settings</a>
+  </div>
+
+  <div data-role="main" class="ui-content">
+    
+      <h1>Looking For What in Lagos?</h1>
+            <ul data-role="listview" data-inset="true" data-theme="b">
+      <li>
+        <a href="#laghosp" data-transition="slideup" class="ui-btn ui-icon-heart ui-btn-icon-left">
+        
+        <h5>Hospitals</h5>
+        
+        </a>
+      </li>
+      <li>
+        <a href="#lagbank" class="ui-btn ui-icon-location ui-btn-icon-left">
+        
+        <h5>Banks</h5>
+        
+        </a>
+      </li>
+    <li>
+        <a href="#lagair" class="ui-btn ui-icon-navigation ui-btn-icon-left">
+        
+        <h5>Airports</h5>
+        
+        </a>
+      </li>
+      </ul>
+  </div>
+
+  <div data-role="footer" style="text-align: center" data-theme="b">
+    <p>Powered by iLaid Media</p>
+  </div>
+
+</div><!-- /lagos_page -->
+    
+    <div data-role="page" id="port">
+
+  <div data-role="header" data-theme="b">
+      <a href="#home" class="ui-nodisc-icon ui-btn  ui-btn-left ui-shadow ui-corner-all ui-icon-arrow-l ui-btn-icon-notext">Back</a>
+    <h1>Yelz!</h1>
+  </div>
+
+  <div data-role="main" class="ui-content">
+    <p>I Am Now A Mobile Developer!!</p>
+  </div>
+
+  <div data-role="footer">
+    <p>Powered by iLaid Media</p>
+  </div>
+
+</div><!-- /port_page -->
+    
+    <!-- laghospitalMap -->
+    <div data-role="page" id="laghosp">
+        <div data-role="header" data-theme="b">
+      <a href="#lagos" class="ui-nodisc-icon ui-btn  ui-btn-left ui-shadow ui-corner-all ui-icon-arrow-l ui-btn-icon-notext">Back</a>
+    <h1>Yelz!</h1>
+       </div>
+        
+        <div data-role="main" id="mapCanvas">
+        <!-- Map loads here -->
+            
+        </div>
+        <a href="#dialog">Click Me</a>
+        <div data-role="footer" data-theme="d">
+    <p>Powered by iLaid Media</p>
+  </div>
+    </div><!-- end of laghospitalMap -->
+    
+    <!-- dialog box -->
+    <div data-role="page" data-dialog="true" id="dialog">
+  <div data-role="header">
+    <h1>I'm A Dialog Box!</h1>
+  </div>
+
+  <div data-role="main" class="ui-content">
+      <h3>I'm meant to display a MAP here..</h3>
+    <p>The dialog box is different from a normal page, it is displayed on top of the current page and it will not span the entire width of the page. The dialog has also an icon of "X" in the header to close the box.</p>
+    
+  </div>
+
+  <div data-role="footer">
+    <h1>Footer Text In Dialog</h1>
+  </div>
+    </div><!--end of dialog box -->
+    <script src="scripts/map.js"></script>
+</body>
+</html>

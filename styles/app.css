@@ -1,0 +1,14 @@
+body{
+    background: url(images/bkground.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: scroll;
+    background-size: cover;
+}
+.ui-page{
+    background: transparent;
+}
+.ui-content{
+    background: transparent;
+}
+.pix{width: 430px; height: 150px;}
