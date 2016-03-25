@@ -6,7 +6,7 @@
 	<link rel="stylesheet" href="themes/sample_themes.css">
     <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
     <link rel="stylesheet" href="styles/app.css">
-    <link rel="stylesheet" href="styles/map.css">
+    
     <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
     <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
 </head>
@@ -68,7 +68,7 @@
     <div data-role="page" id="lagos" >
 
   <div data-role="header" data-theme="b">
-      <a href="#home" class="ui-nodisc-icon ui-btn ui-shadow ui-corner-all ui-btn-left ui-icon-arrow-l ui-btn-icon-notext">Back</a>
+      <a href="#home" class="ui-nodisc-icon ui-btn ui-shadow ui-corner-all ui-btn-left ui-icon-carat-l ui-btn-icon-notext">Back</a>
     <h1>Yelz!</h1>
       <a href="#" class="ui-nodisc-icon ui-shadow ui-corner-all ui-btn  ui-btn-right ui-icon-eye ui-btn-icon-notext">Settings</a>
   </div>
@@ -78,7 +78,7 @@
       <h1>Looking For What in Lagos?</h1>
             <ul data-role="listview" data-inset="true" data-theme="b">
       <li>
-        <a href="#laghosp" data-transition="slideup" class="ui-btn ui-icon-heart ui-btn-icon-left">
+        <a href="#laghospitals" data-transition="slideup" class="ui-btn ui-icon-heart ui-btn-icon-left">
         
         <h5>Hospitals</h5>
         
@@ -124,7 +124,7 @@
 
 </div><!-- /port_page -->
     
-    <!-- laghospitalMap -->
+    <!-- laghospitalMap --
     <div data-role="page" id="laghosp">
         <div data-role="header" data-theme="b">
       <a href="#lagos" class="ui-nodisc-icon ui-btn  ui-btn-left ui-shadow ui-corner-all ui-icon-arrow-l ui-btn-icon-notext">Back</a>
@@ -132,16 +132,16 @@
        </div>
         
         <div data-role="main" id="mapCanvas">
-        <!-- Map loads here -->
+        <!-- Map loads here --
             
         </div>
         <a href="#dialog">Click Me</a>
         <div data-role="footer" data-theme="d">
     <p>Powered by iLaid Media</p>
   </div>
-    </div><!-- end of laghospitalMap -->
+    </div><!-- end of laghospitalMap --
     
-    <!-- dialog box -->
+    <!-- dialog box --
     <div data-role="page" data-dialog="true" id="dialog">
   <div data-role="header">
     <h1>I'm A Dialog Box!</h1>
@@ -157,6 +157,64 @@
     <h1>Footer Text In Dialog</h1>
   </div>
     </div><!--end of dialog box -->
-    <script src="scripts/map.js"></script>
+    
+    <!-- start of responsive listview page for lag hospitals -->
+    <div data-role="page" data-theme="b" id="laghospitals" class="my-page" data-url="demo-page">
+    <div data-role="header">
+        <h1>Lagos Hospitals</h1>
+        <a href="#lagos" class="ui-nodisc-icon ui-btn  ui-btn-left ui-shadow ui-corner-all ui-icon-carat-l ui-btn-icon-notext">Back</a>
+    </div><!-- /header -->
+    <div role="main" class="ui-content">
+        <ul data-role="listview" data-inset="true">
+            <li><a href="#dvnhosp">
+                <img src="images/dvnmed.jpg" class="ui-li-thumb">
+                <h2>Divine Medical Center</h2>
+                <p>223, Raymond way, Keffi, Ikoyi</p>
+                <p class="ui-li-aside">IKOYI</p>
+            </a></li>
+            <li><a href="#">
+                <img src="images/hava.jpg" class="ui-li-thumb">
+                <h2>Havanna Clinic</h2>
+                <p>14b, Akerele Avenue, Surulere</p>
+                <p class="ui-li-aside">SURULERE</p>
+            </a></li>
+            <li><a href="#">
+                <img src="images/luth.jpg" class="ui-li-thumb">
+                <h2>LUTH</h2>
+                <p>569, Idi-araba, Mushin</p>
+                <p class="ui-li-aside">MUSHIN</p>
+            </a></li>
+            
+        </ul>
+    </div><!-- /content -->
+</div><!--end of laghospitals responsive page -->
+    
+    <!-- divine hospitalMap -->
+    <div data-role="page" id="dvnhosp">
+        <div data-role="header" data-theme="b">
+      <a href="#laghospitals" class="ui-nodisc-icon ui-btn  ui-btn-left ui-shadow ui-corner-all ui-icon-carat-l ui-btn-icon-notext">Back</a>
+    <h1>Yelz!</h1>
+       </div>
+        
+        <div data-role="main" id="mapCanvas">
+        <!-- Map loads here -->
+        </div>
+        <img src="images/dvnmed.jpg" class="ui-li-thumb">
+        <p>Some random text, meant to represent detailed information of site</p>
+        <a href="#dialog">Contact Us</a>
+        <div data-role="footer" data-theme="d">
+    <p>Powered by iLaid Media</p>
+  
+    </div><!-- end of divine hospitalMap -->
+    </div>
+    
+    <!-- dialog box -->
+    <div data-role="page" data-dialog="true" id="dialog">
+  <div data-role="header">
+    <h3>Divine Medical Center</h3>
+        <p>Contact Us</p>
+        <p>223, Raymond way, Keffi, Ikoyi</p>
+  </div>
+    </div>
 </body>
 </html>
