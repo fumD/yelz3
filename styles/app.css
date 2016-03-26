@@ -5,6 +5,9 @@ body{
     background-attachment: scroll;
     background-size: cover;
 }
+#landing,#port,#laghospitals,#home,#lagos,#dvnhosp{background-color: darkgoldenrod}
+#bigg{font-size: 80px;text-align: center}
+#fwdbtn{border-radius: 95px}
 .ui-page{
     background: transparent;
 }

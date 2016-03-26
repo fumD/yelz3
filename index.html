@@ -11,7 +11,16 @@
     <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
 </head>
 <body>
-    <div data-role="page" id="home">
+    <!-- splash screen-type landing page-->
+    <div data-role="page" id="landing" class="bodybak">
+        <div data-role="main" class="ui-content">
+        <h1 id="bigg">Yelz!</h1>
+            <h2>Discover locations, businesses and services in your vicinity</h2>
+            <a href="#home"><img src="images/fwdbtn2.jpg" alt="proceed" id="fwdbtn"></a>
+        </div>
+    </div><!--endof landing page-->
+    
+    <div data-role="page" id="home" class="bodybak">
  <div data-role="popup" id="popUp" data-theme="b">
      <h3>Change Themes</h3>
   <p><a href="#">Theme B</a></p>
@@ -65,7 +74,7 @@
  
     </div><!-- /page -->
     
-    <div data-role="page" id="lagos" >
+    <div data-role="page" id="lagos" class="bodybak">
 
   <div data-role="header" data-theme="b">
       <a href="#home" class="ui-nodisc-icon ui-btn ui-shadow ui-corner-all ui-btn-left ui-icon-carat-l ui-btn-icon-notext">Back</a>
@@ -107,7 +116,7 @@
 
 </div><!-- /lagos_page -->
     
-    <div data-role="page" id="port">
+    <div data-role="page" id="port" class="bodybak">
 
   <div data-role="header" data-theme="b">
       <a href="#home" class="ui-nodisc-icon ui-btn  ui-btn-left ui-shadow ui-corner-all ui-icon-arrow-l ui-btn-icon-notext">Back</a>
@@ -159,7 +168,7 @@
     </div><!--end of dialog box -->
     
     <!-- start of responsive listview page for lag hospitals -->
-    <div data-role="page" data-theme="b" id="laghospitals" class="my-page" data-url="demo-page">
+    <div data-role="page" data-theme="b" id="laghospitals" class="my-page" data-url="demo-page" class="bodybak">
     <div data-role="header">
         <h1>Lagos Hospitals</h1>
         <a href="#lagos" class="ui-nodisc-icon ui-btn  ui-btn-left ui-shadow ui-corner-all ui-icon-carat-l ui-btn-icon-notext">Back</a>
@@ -190,7 +199,7 @@
 </div><!--end of laghospitals responsive page -->
     
     <!-- divine hospitalMap -->
-    <div data-role="page" id="dvnhosp">
+    <div data-role="page" id="dvnhosp" class="bodybak">
         <div data-role="header" data-theme="b">
       <a href="#laghospitals" class="ui-nodisc-icon ui-btn  ui-btn-left ui-shadow ui-corner-all ui-icon-carat-l ui-btn-icon-notext">Back</a>
     <h1>Yelz!</h1>
@@ -209,7 +218,7 @@
     </div>
     
     <!-- dialog box -->
-    <div data-role="page" data-dialog="true" id="dialog">
+    <div data-role="page" data-dialog="true" id="dialog" class="bodybak">
   <div data-role="header">
     <h3>Divine Medical Center</h3>
         <p>Contact Us</p>
